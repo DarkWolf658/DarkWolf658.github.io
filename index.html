@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>STL Student Site</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="src/style_normal.css"> <!-- Desktop and Tablet (Horizontal) CSS Styles -->
+    <link rel="stylesheet" href="src/style_tablet.css" media="only screen and (max-width: 1025px)"> <!-- Desktop and Tablet (Horizontal) CSS Styles -->
+    <link rel="stylesheet" href="src/style_mobile.css" media="only screen and (max-width: 800px)"> <!-- Phone and Tablet (Portrait) CSS Styles -->
+    <link rel="sytlesheet" href="src/button.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to the Saint Laurence Student Site!</h1> <!-- The Heading -->
+    </header>
+
+    <nav>
+      <!--OLD CODE-->
+      <!--<a class="s" href="src\1.html" target="frame"><button>Choose Bell Schedule</button></a>--> <!-- Links to the Schedules -->
+      
+      <!--NEW CODE-->
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Bell Schedule</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="src\1.html" target="frame">S</a>
+          <a href="src\2.html" target="frame">H</a>
+          <a href="src\3.html" target="frame">I</a>
+          <a href="src\4.html" target="frame">E</a>
+          <a href="src\5.html" target="frame">L</a>
+          <a href="src\6.html" target="frame">D</a>
+        </div>
+      </div>
+      <script>
+      /* When the user clicks on the button,
+          toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+          
+          // Close the dropdown menu if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+              var i;
+              for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+          </script>
+      <a href="https://docs.google.com/presentation/d/e/2PACX-1vSoFEfJAX1zkSp_l9Skc0CtGwQQK6ulYvhDCbjMUUZ_Rr_1rT0yT3ww1iaYf7UZeWApLxjTNgrt78pK/embed?start=true&loop=true&delayms=5000" target="frame"><button class="dropbtn">Today's Announcements</button></a> <!-- Links to the Daily Announcements -->
+      <a href="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FChicago&amp;src=bGdhcmNpYUBzdGxhdXJlbmNlLmNvbQ&amp;src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tZWZiZjk3NTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNTA0YzBhNWJAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNzJhMjJkODVAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNjQwOWUwODNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tMWEyNTg0Y2VAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNGI1NTVmYWJAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tN2Y3NDU3ODdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNDA1ZDQyOTdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNWFlMDMzOTRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tYzI1YThiZTFAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tMzgwNGVhNzVAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tY2UzZWMxYTZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNGI4Y2Q5YzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tM2Y0YTkwODlAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tYjkzYmQ5NGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tMWJlMzVhYzJAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tYzg5ZGRlMjNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tMDkxNDg1NDlAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tMGM2OGNlYjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tZmIwYWZhYmZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNzM2ODE3YTFAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tYmEwY2Y2NDJAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tZmJiZmE4YjJAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tYmQ3Zjg1ODBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNDFkMzAyZDZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tYTAwNmIzM2NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tZTQ1YWFjYThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tOGJmZjQwODZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNmI3YzFjNzlAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tMDljYzVhMTdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tYTVkYjgyMjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tODM1NzdjZTJAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tMmI3ZWZlNDVAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tZDczNjg1NmZAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNmZhZTdmNDdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tNmI0MWIxZThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tODNlYmZiMjNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=c3RsYXVyZW5jZS5jb21fY2xhc3Nyb29tYTAxMGI1NjBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YWxiMmRrbGNzbDQyc21rcHRicXJhMzduYWRzb21mZWJAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%2322AA99&amp;color=%23329262&amp;color=%230e2783&amp;color=%2303561f&amp;color=%23581494&amp;color=%2300382e&amp;color=%230349aa&amp;color=%230e2783&amp;color=%23350a6a&amp;color=%23350a6a&amp;color=%230e2783&amp;color=%230e2783&amp;color=%230e2783&amp;color=%230349aa&amp;color=%23821505&amp;color=%2300382e&amp;color=%23192328&amp;color=%230e2783&amp;color=%23821505&amp;color=%23192328&amp;color=%231F753C&amp;color=%23350a6a&amp;color=%23183d0b&amp;color=%23350a6a&amp;color=%23821505&amp;color=%230349aa&amp;color=%23680439&amp;color=%2300382e&amp;color=%23183d0b&amp;color=%23910056&amp;color=%23083782&amp;color=%230e2783&amp;color=%23821505&amp;color=%23003e17&amp;color=%230e2783&amp;color=%230e2783&amp;color=%2300382e&amp;color=%239c4100&amp;color=%232c1a17&amp;color=%232c1a17&amp;color=%232c1a17&amp;color=%2381910B&amp;showTitle=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;showCalendars=0" target="frame"><button class="dropbtn" >STL Calendar</button></a> <!-- Links to the Lunch Special -->
+      <div>
+        <a></a>
+      </div>
+    </nav>
+
+    <div class = fr>
+      <article>
+        <iframe class="s" src="src\1.html" height="100%" width="100%" style="border:none;" name="frame"></iframe> <!-- Content Frame -->
+      </article>
+    </div>
+
+    <!-- Get day of the month -->
+    <!-- Dev Notes: The page should use the current date to search the json file for the object with that name.
+    The page should then load that value into the respective areas(href and src). CURENTLY USED VARIABLES: b x m y c p-->
+    <!-- <script src="src\list.json">
+        var b = new Date();
+        var x = b.getMonth();
+        var m = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"];
+        var y = b.getDate();
+        var c = m[x] + "/" + y;
+        var mon = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "novemeber", "december"];
+        var fes = mon[x];
+        for (i = 0; i < 3; i++) {p = list.dates;
+          for (j = 0; j < 3; j++) {q = list.fes}}
+        document.getElementsByClassName("s").src = p;
+        document.getElementsByClassName("s").href = p;
+    </script> -->
+
+    <footer>Copyright &copy; Lucas Garcia </footer>
+  </body>
+</html>

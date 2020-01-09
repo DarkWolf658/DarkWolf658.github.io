@@ -1,0 +1,30 @@
+{"dates": [
+    {"august": [
+        {"8/21":"src/1.html"},
+        {"8/22":"src/2.html"},
+        {"8/23":"src/3.html"},
+        {"8/26":"src/4.html"},
+        {"8/27":"src/5.html"},
+        {"8/28":"src/6.html"},
+        {"8/29":"src/1.html"},
+        {"8/30":"src/2.html"}
+    ]},
+    {"september": [
+        {"9/2":"src/3.html"},
+        {"9/3":"src/4.html"},
+        {"9/4":"src/5.html"},
+        {"9/5":"src/6.html"},
+        {"9/6":"src/1.html"},
+        {"9/9":"src/1.html"},
+        {"9/10":"src/1.html"},
+        {"9/11":"src/1.html"},
+        {"9/12":"src/1.html"},
+        {"9/13":"src/1.html"},
+        {"9/16":"src/6.html"},
+        {"9/17":"src/1.html"},
+        {"9/18":"src/2.html"},
+        {"9/19":"src/3.html"},
+        {"9/20":"src/4.html"}
+
+    ]}
+]}
